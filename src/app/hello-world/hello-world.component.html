@@ -1,1 +1,49 @@
-<h1>{{title}}</h1>
+
+<div>
+    <div>
+        <h1>{{title}}</h1>
+    </div>
+    <div>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>S. No.</th>
+                    <th>Characters</th>
+                    <th>URLs</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr
+                [ngClass] = '{"table-success":o}' 
+                *ngFor="let movie of movies; let i=index;let e= even;let o = odd">
+                    <td>{{i+1}}</td>
+                    <td style="text-transform: capitalize;">{{movie.name}}
+                    </td>
+                    <td><a href="{{movie.url}}" target="_blank">{{movie.url}}</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+<!-- 
+<input type="text" (input)="handleInput($event); value2=$any($event.target).value" value="{{value}}"/>
+<h1>{{value}}</h1>
+<h2>{{value2}}</h2> -->
+
+
+<!-- <button (click)="clickMe()" style="cursor: pointer;">{{count}}</button> -->
+
+
+<!-- Basis -->
+<!-- <h1 style.color="{{color}}">{{getName()}}</h1>
+<p>{{getMax(100,101)}}</p>
+<h2 [innerText]="getName()"></h2>
+<button [disabled]="isDisabled(true)">Submit</button> -->
