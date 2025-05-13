@@ -1,5 +1,37 @@
+<h1>ngClass</h1>
+<label>Make Red & Bold<input type="checkbox" [(ngModel)]="makeRed"/></label>
+<div [ngClass]="{'primary':makeRed,'bold':makeRed}">
+    Hello Thrisith
+</div>
 
-<div>
+
+
+
+<!-- <h1>ngIf</h1>
+<div class="row">
+    <label for="checkbox">Checkbox Uh! 
+    <input type="checkbox" [(ngModel)]="showContent"/></label>
+    <h2 *ngIf="showContent; then thenBlock else elseBlock">Content Showed</h2>
+    <ng-template #elseBlock>
+        <h2>Content Not Showed</h2>
+    </ng-template>
+    <ng-template #thenBlock>
+        <h2><i>Then Block</i></h2>
+    </ng-template>
+</div> -->
+
+
+
+
+<!-- 
+<input type="number" [(ngModel)]="num"/>
+<h1>{{num}}</h1>
+<div [ngSwitch]="num">
+    <div *ngSwitchCase=1>One</div>
+</div> -->
+
+
+<!-- <div>
     <div>
         <h1>{{title}}</h1>
     </div>
@@ -14,8 +46,8 @@
             </thead>
             <tbody>
                 <tr
-                [ngClass] = '{"table-success":o}' 
-                *ngFor="let movie of movies; let i=index;let e= even;let o = odd">
+                [ngClass] = '{"table-success":o, "table-warning":l}' 
+                *ngFor="let movie of movies; let i=index;let e= even;let o = odd; let f = first; let l = last;">
                     <td>{{i+1}}</td>
                     <td style="text-transform: capitalize;">{{movie.name}}
                     </td>
@@ -24,10 +56,7 @@
             </tbody>
         </table>
     </div>
-</div>
-
-
-
+</div> -->
 
 
 
