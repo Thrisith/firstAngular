@@ -1,0 +1,12 @@
+<h1>List Component</h1>
+<div *ngIf = "cars.length>0; then listDirective; else noData"></div>
+<ng-template #listDirective>
+<ol>
+    <li *ngFor="let car of cars">
+        {{car}}
+    </li>
+</ol>
+</ng-template>
+<ng-template #noData>
+<h2>No Data Found!</h2>
+</ng-template>

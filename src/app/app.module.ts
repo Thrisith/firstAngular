@@ -5,10 +5,14 @@ import { AppComponent } from './app.component';
 import { HelloWorldComponent } from './hello-world/hello-world.component';
 import { FormsModule } from '@angular/forms';
 import { SampleWorldComponent } from './sample-world/sample-world.component';
+import { FormComponent } from './form/form.component';
+import { ListComponent } from './list/list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    FormComponent,
+    ListComponent
     // HelloWorldComponent,
     // SampleWorldComponent
   ],

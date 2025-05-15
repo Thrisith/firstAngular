@@ -1,0 +1,11 @@
+<h1 [ngStyle]="{'color':'red'}">Cars Form Creation</h1>
+<form action="" (ngSubmit)="addCar()">
+    <label>Enter the car name:
+    <input type="text" name="Carname" [(ngModel)]="carName"/>
+    </label>
+    <br/>
+    <!-- <button (click)="addCar()">Submit</button>  -->
+    <input type="submit" value="Submit"/>
+</form>
+<br/>
+<app-list [carsInput]="cars"></app-list>
