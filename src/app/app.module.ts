@@ -9,8 +9,8 @@ import { SampleWorldComponent } from './sample-world/sample-world.component';
 @NgModule({
   declarations: [
     AppComponent,
-    HelloWorldComponent,
-    SampleWorldComponent
+    // HelloWorldComponent,
+    // SampleWorldComponent
   ],
   imports: [
     BrowserModule,

@@ -8,9 +8,11 @@ import { retry } from 'rxjs';
   styleUrl: './hello-world.component.css'
 })
 export class HelloWorldComponent {
-
-  makeRed = false;
-
+  toDate =  new Date()
+  str = "Thrisith"
+  // color="#000";
+  // error = true;
+  // makeRed = false;
 
   // num = 0;
   
