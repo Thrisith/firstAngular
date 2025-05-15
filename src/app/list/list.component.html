@@ -1,4 +1,5 @@
-<h1>List Component</h1>
+<app-form (carAdded)="carDataAdded($event)"></app-form>
+<h3>List Component</h3>
 <div *ngIf = "cars.length>0; then listDirective; else noData"></div>
 <ng-template #listDirective>
 <ol>

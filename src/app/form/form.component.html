@@ -1,4 +1,4 @@
-<h1 [ngStyle]="{'color':'red'}">Cars Form Creation</h1>
+<h3 [ngStyle]="{'color':'red'}">Cars Form Creation</h3>
 <form action="" (ngSubmit)="addCar()">
     <label>Enter the car name:
     <input type="text" name="Carname" [(ngModel)]="carName"/>
@@ -8,4 +8,3 @@
     <input type="submit" value="Submit"/>
 </form>
 <br/>
-<app-list [carsInput]="cars"></app-list>

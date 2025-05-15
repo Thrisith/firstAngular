@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-form',
@@ -7,10 +7,12 @@ import { Component } from '@angular/core';
   styleUrl: './form.component.css'
 })
 export class FormComponent {
+  @Output() carAdded:EventEmitter<string[]>  = new EventEmitter;
   cars:string[]=[];
   carName = "";
   addCar(){
     this.cars.push(this.carName);
     this.carName="";
+    this.carAdded.emit(this.cars);
   }
 }

@@ -7,5 +7,8 @@ import { Component, Input} from '@angular/core';
   styleUrl: './list.component.css'
 })
 export class ListComponent {
-  @Input("carsInput") cars:string[]=[];
+  cars:string[]=[];
+  carDataAdded(carData:string[]){
+    this.cars = carData;
+  } 
 }
