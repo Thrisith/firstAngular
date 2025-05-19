@@ -1,2 +1,9 @@
 <h1>App Component</h1>
-<app-list></app-list>
+<form action="" (ngSubmit)="addItems()">
+<input type="text" [(ngModel)]="inputValue" name="inputValue" placeholder="Enter something here!"/>
+<input type="submit" value="Add Items"/>
+<br/>
+<label>Hide or Show Heading: <input type="checkbox" [(ngModel)]="heading" name="headingShowOrHide"/></label>
+</form>
+<!-- <app-list></app-list> -->
+ <app-heading *ngIf="heading" [inputValuePass]="items"></app-heading>
