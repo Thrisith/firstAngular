@@ -1,0 +1,44 @@
+<div>
+<h3>Template Driven Form</h3>
+<form #contactForm="ngForm" (submit)="onSubmit(contactForm)">
+<p>
+    <label for="name">Full Name: </label>
+    <input type="text" name="name" id="name" ngModel/>
+</p>
+<p>
+    <label for="age">Age: </label>
+    <input type="text" name="age" id="age" ngModel/>
+</p>
+<p>
+    <label for="gender">Gender: </label><br/>
+    <label>Male</label><input type="radio" name="gender" id="gender" value="Male" ngModel/>
+    <label>Female</label><input type="radio" name="gender" id="gender" value="Female" ngModel/>
+</p>
+<p>
+    <label for="marital">Married: </label>
+    <input type="checkbox" name="marital" id="marital" ngModel/>
+</p>
+<p>
+    <label for="city">City: </label>
+    <input type="text" name="city" id="city" ngModel/>
+</p>
+<p>
+    <label for="street">Street: </label>
+    <input type="text" name="street" id="street" ngModel/>
+</p>
+<p>
+    <label for="pincode">City: </label>
+    <input type="text" name="pincode" id="pincode" ngModel/>
+</p>
+<p>
+    <label for="country">Country: </label>
+    <select name="country" ngModel>
+        <option value="">Select</option>
+        <option [ngValue]="country.id" *ngFor="let country of countryList">{{country.name}}</option>
+    </select>
+</p>
+<p>
+    <button type="submit">Submit</button>
+</p>
+</form>
+</div>

@@ -8,13 +8,17 @@ import { SampleWorldComponent } from './sample-world/sample-world.component';
 import { FormComponent } from './form/form.component';
 import { ListComponent } from './list/list.component';
 import { HeadingComponent } from './heading/heading.component';
+import { TemplateDrivenFormComponent } from './template-driven-form/template-driven-form.component';
+import { RemainingAngularComponent } from './remaining-angular/remaining-angular.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FormComponent,
     ListComponent,
-    HeadingComponent
+    HeadingComponent,
+    TemplateDrivenFormComponent,
+    RemainingAngularComponent
     // HelloWorldComponent,
     // SampleWorldComponent
   ],
